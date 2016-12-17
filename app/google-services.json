@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "696663649802",
+    "project_id": "translateposts-152316"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696663649802:android:e8935900db92e972",
+        "android_client_info": {
+          "package_name": "com.ankurmittal.translateposts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696663649802-i6q5h14p9vv8ovp59c4mbggnqukd9gbn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ankurmittal.translateposts",
+            "certificate_hash": "58FEA42A6E9F888131691A20942DE4532334CA4C"
+          }
+        },
+        {
+          "client_id": "696663649802-ivh2pklk9hku1imubrp9l6mcl0ghn1oh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPBHK23PihB1Qn4p0ju_JV4gGnhZNGiqs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

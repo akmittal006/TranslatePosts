@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ankurmittal.translateposts.WallActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/postLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorPrimary">
+        <EditText
+            android:paddingBottom="6dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:minLines="2"
+            android:id="@+id/messageEditText"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:hint="What's on your mind?"
+            android:gravity="top"
+            android:background="@android:color/white"/>
+
+        <Button
+            android:text="Post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messageEditText"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/postButton"
+            android:focusable="true" android:descendantFocusability="beforeDescendants"/>
+
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/postsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/postLayout"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@+id/signInLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <com.google.android.gms.common.SignInButton
+
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:text="Translate Posts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sign_in_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:id="@+id/TPLabel"
+            android:textSize="36sp"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+</RelativeLayout>
